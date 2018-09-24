@@ -1,0 +1,35 @@
+<!DOCTYPE hibernate-configuration PUBLIC 
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+	"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/proyectoPiscicola</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">proyectoPiscicola12345</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.timeou">1800</property>
+		<property name="hibernate.c3p0.max_statements">50</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">false</property>
+		
+		<mapping class="modelo.persona"/>
+		<mapping class="modelo.perfil"/>
+		<mapping class="modelo.persona_perfil"/>
+		<mapping class="modelo.evento"/>
+		<mapping class="modelo.evento_persona_pecera"/>
+		<mapping class="modelo.indicador"/>
+		<mapping class="modelo.pecera"/>
+		<mapping class="modelo.pescado_pecera"/>
+		<mapping class="modelo.pescado"/>
+		<mapping class="modelo.rango"/>
+		<mapping class="modelo.sensor"/>
+		<mapping class="modelo.solucion_persona"/>
+		<mapping class="modelo.sensor_pecera_pescado"/>
+		 	
+	</session-factory>
+</hibernate-configuration>
