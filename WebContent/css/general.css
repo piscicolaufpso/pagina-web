@@ -1,0 +1,57 @@
+/*Typography*/
+h1 {
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+/*Cargando*/
+#cargando{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: #808080;
+	opacity: 0.5;
+}
+.ver{
+	display: block;
+}
+.no-ver{
+	display: none;
+}
+#icono-cargando{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Datos actuales*/   
+.seleccion:focus{
+	outline: none;
+	}
+@media (min-width: 576px) {
+	.card-modificado{
+		 width: 16rem;
+	}
+	/*usuario*/
+	.formulario-usuario{
+		margin: 5em;
+	}
+}
+	
+/*Calendario*/
+.td-casilla:hover{
+  background: #BDBDBD;
+}
+/*Hover*/
+.activo:hover{
+	cursor: pointer;
+}	
+
+.centrar-opciones{
+	display: flex;
+  	justify-content: center;
+}
+	
+	
+	

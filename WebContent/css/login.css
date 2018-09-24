@@ -1,0 +1,77 @@
+body{
+	background-image:url(../img/fondo-degradado.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+h2{
+	margin-top: 30%;
+}
+a{
+  	text-decoration: none;
+  	color: white;
+}
+a:hover{
+	color: #88CBFA;
+}
+form{
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.principal{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.contorno{
+	height: 30em;
+}
+.contorno-informacion{
+	color: white;
+	background-color: rgba(255, 63, 63, 0.6);
+	text-align: center;
+}
+.contorno-form{
+	margin-top: 5%;
+	color: #666;
+}
+.input-margen{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+.icono{
+	margin: auto;
+	padding-top: 5px;
+	width: 100px;
+	height: 100px;
+	background: #E9ECEF;
+	border-radius: 50px;
+	text-align: center;
+}
+.recuperar{
+	color: #60BA48;
+}
+@media (max-width: 576px) {
+	.contorno{
+		height: 18em;
+		margin-left: 8px;
+		margin-right: 8px;
+		border-radius: 10px;
+	}
+	.contorno-formulario{
+		height: 20em;
+	}
+	.contorno-informacion{
+		display: none;
+	}
+	.input-margen{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	h2{
+		margin-top: 12%;
+	}
+}
